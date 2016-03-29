@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     int a,b,c,d,i,m,mcd;
-    printf("Programa que calcula el Maximo Comun divisor de 4 números:\n");
+    printf("Programa que calcula el Maximo Comun divisor de 4 nÃºmeros:\n");
     printf("Introduce el primer numero: ");
     scanf("%d",&a);
     printf("Introduce el segundo numero: ");
@@ -27,7 +27,7 @@ int main()
     if (d<a and d<c and d<b) {
         m = d;
     for (i=1; i<=m;i++) {
-        if (a%i==0 && b%i==0 && c==0 && d==0) {
+        if (a%i==0 && b%i==0 && c%i==0 && d%i==0) {
             mcd=i;
             }
         }
