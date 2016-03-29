@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1459220082 source:d:\users\usuario\desktop\trabajo 2.4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio.h>
+
+1459220119 source:d:\users\usuario\desktop\trabajo 2.4\main.cpp
+	<iostream>
+	<stdio.h>
+
