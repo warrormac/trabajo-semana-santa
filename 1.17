@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+
+int main ()
+{
+    char a[1000];
+    std::cout<<"ingrese su palabla\n";
+    std::cin>>a;
+    std::string str (a);
+    int b;
+    b=str.length();
+    if (b>81)
+    {
+        std::cout<<a;
+    }
+    if (str.length()<81);
+    {
+        return 0;
+    }
+
+}
