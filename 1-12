@@ -1,12 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-int main()
+#include <ctype.h>
+int main ()
 {
-    int c;
-
-    while (c=getchar() != EOF)
-        printf(c);
-        if (c==' ')
-            printf("\n");
-}
+  char c;
+  int i=0;
+  char str[]="esta es la oracion\n";
+  while (str[i])
+  {
+    c=str[i];
+    if (isspace(c))
+        c='\n';
+    putchar (c);
+    i++;
+  }
+  return 0;
