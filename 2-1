@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf ("el rango de un char es de -128 a 127\n");
+    printf ("el rango de un int es de  -2147483648 a 2147483647\n");
+    printf ("el rongo de un short es de -32768 a 32767");
+    return 0;
+}
