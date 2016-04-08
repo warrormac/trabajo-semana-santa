@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+
+int main() {
+   char str[100];
+   char stra[100];
+   int a, b,i;
+
+
+   printf("ingrese su texto\n");
+   gets(str);
+   gets(stra);
+
+   a = strlen(str);
+   b = strlen(stra);
+   for (i=0;i<=a;++i)
+   {
+       if (str[i]==stra[i])
+            printf(str[i]);
+            break:
+       
+   }
+
+   return (0);
+}
