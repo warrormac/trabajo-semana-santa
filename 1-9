@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+  int c;
+  int sp;
+
+  sp = 0;
+  while((c = getchar()) != EOF)
+  {
+    if(c == ' ')
+    {
+      if(sp == 0)
+      {
+          sp=1;
+          putchar(c);
+      }
+    }
+
+    if(c != ' ')
+    {
+      sp = 0;
+      putchar(c);
+    }
+  }
+
+  return 0;
+}
