@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int c, d;
+
+    while ((c=getchar()) != EOF) {
+        d = 0;
+        if (c == '\\') {        //este es el tab
+            putchar('\\');
+            putchar('\\');
+            d = 1;
+        }
+        if (c == '\t') { //este es el tab
+            putchar('\\');
+            putchar('t');
+            d = 1;
+        }
+        if (c == '\b') { //este es el backspace
+            putchar('\\');
+            putchar('b');
+            d = 1;
+        }
+        if (d == 0)
+            putchar(c);
+    }
+    return 0;
+}
