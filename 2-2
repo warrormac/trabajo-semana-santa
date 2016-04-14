@@ -1,12 +1,27 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
+#define MAX 100
+
+int main(void)
 {
-    int c=10;
-    int s,i;
-    for (i=0;i<10;++i)
-        s=i;
+	int i = 0;
+	int	lim = MAX;
+	int	c;
+	char s[MAX];
 
-    printf("%d",s);
+	while (i < (lim - 1))
+	{
+		c = getchar();
+
+		if (c == EOF)
+			break;
+		if (c == '\n')
+			break;
+
+		s[i++] = c;
+	}
+
+	s[i] = '\0';
+
+	return 0;
 }
